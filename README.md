@@ -37,49 +37,52 @@ pnpm setup
 ```
 
 在每个子插件项目中执行以下命令：
-
-``` js
+ 
+``` shell 
+Set-Location packages/common
 pnpm link --global
+
+
+Set-Location packages/vite-plugin
+pnpm link --global
+
+
+Set-Location packages/webpack-loader
+pnpm link --global
+
+ 
+ 
+ 
 pnpm list --global --depth 1
 ```
 
 在目标项目中执行以下命令：
-``` js 
-
-pnpm link --global @line-copy/common
-pnpm link --global @line-copy/vite-plugin
-pnpm link --global @line-copy/webpack-loader
-```
-
-``` js
-pnpm unlink --global @line-copy/common
-pnpm unlink --global @line-copy/vite-plugin
-pnpm unlink --global @line-copy/webpack-loader
-```
 
 ``` js 
-pnpm link --save-dev @line-copy/common
-pnpm link --save-dev @line-copy/vite-plugin
+pnpm link --save-dev @line-copy/vite-plugin 
+pnpm link @line-copy/vite-plugin 
+pnpm list @line-copy/vite-plugin
+
 pnpm link --save-dev @line-copy/webpack-loader
+pnpm list @line-copy/webpack-loader
+ 
 ```
 
+
 恢复远程包
+
 ``` js 
-pnpm unlink @line-copy/common
-pnpm remove @line-copy/common
-pnpm add @line-copy/common --save-dev
+pnpm remove @line-copy/vite-plugin
+npm install @line-copy/vite-plugin --save-dev
+pnpm list @line-copy/vite-plugin
 ``` 
+
 恢复远程包
+
 ``` js 
-pnpm unlink @line-copy/vite-plugin
 pnpm remove @line-copy/vite-plugin
 pnpm add @line-copy/vite-plugin --save-dev
-``` 
-恢复远程包
-``` js 
-pnpm unlink @line-copy/vite-plugin
-pnpm remove @line-copy/vite-plugin
-pnpm add @line-copy/vite-plugin --save-dev
+pnpm list @line-copy/vite-plugin
 ``` 
 
 # 本地安装
