@@ -1,6 +1,6 @@
 {
   "name": "@line-copy/common",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "injectDebugInfo.js",
   "type": "module",
   "license": "MIT"

@@ -1,10 +1,10 @@
 {
   "name": "@line-copy/webpack-loader",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "index.js",
   "type": "commonjs",
   "dependencies": {
-    "@line-copy/common": "^1.0.3"
+    "@line-copy/common": "^1.0.4"
   },
   "peerDependencies": {
     "webpack": ">=5.0.0"
