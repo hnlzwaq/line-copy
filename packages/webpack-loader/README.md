@@ -21,13 +21,31 @@ npm install @line-copy/webpack-loader --save-dev
 
 ## 🔧 Usage 使用
 
-### In Vite config 在 Vite 配置中引入插件
+### In Webpack config 在 Webpack 配置中引入 loader
 ```js
-import { vitePluginLineCopy } from '@line-copy/webpack-loader';
+// webpack.config.js
+const path = require('path');
 
-export default {
-  plugins: [vitePluginLineCopy(['el-button'])],
+module.exports = {
+    // ...
+    module: {
+        rules: [
+            {
+                test: /\.vue$/,
+                use: [
+                    {
+                        loader: '@line-copy/webpack-loader',
+                        options: {
+                            targets: ['el-button'], // inject to these components
+                        },
+                    },
+                    'vue-loader', // ensure vue-loader comes after ours
+                ],
+            },
+        ],
+    },
 };
+
 ```
 
 ### In main.js  在 main.js 中注册插件
@@ -39,6 +57,7 @@ import LineCopy from '@line-copy/webpack-loader';
 const app = createApp(App);
 app.use(LineCopy);
 app.mount('#app');
+
 ```
 
 ## 📋 How it works 工作原理
