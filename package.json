@@ -13,5 +13,8 @@
   "license": "MIT",
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "@line-copy/vite-plugin": "link:C:/Users/wanganqing/AppData/Local/pnpm/global/5/node_modules/@line-copy/vite-plugin"
   }
 }

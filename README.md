@@ -40,18 +40,47 @@ pnpm setup
 
 ``` js
 pnpm link --global
+pnpm list --global --depth 1
 ```
 
 在目标项目中执行以下命令：
+``` js 
 
-``` js 安装
-pnpm link --global @line-copy/vite-common
+pnpm link --global @line-copy/common
 pnpm link --global @line-copy/vite-plugin
 pnpm link --global @line-copy/webpack-loader
-
-pnpm link --save-dev @line-copy/vite-plugin
 ```
 
+``` js
+pnpm unlink --global @line-copy/common
+pnpm unlink --global @line-copy/vite-plugin
+pnpm unlink --global @line-copy/webpack-loader
+```
+
+``` js 
+pnpm link --save-dev @line-copy/common
+pnpm link --save-dev @line-copy/vite-plugin
+pnpm link --save-dev @line-copy/webpack-loader
+```
+
+恢复远程包
+``` js 
+pnpm unlink @line-copy/common
+pnpm remove @line-copy/common
+pnpm add @line-copy/common --save-dev
+``` 
+恢复远程包
+``` js 
+pnpm unlink @line-copy/vite-plugin
+pnpm remove @line-copy/vite-plugin
+pnpm add @line-copy/vite-plugin --save-dev
+``` 
+恢复远程包
+``` js 
+pnpm unlink @line-copy/vite-plugin
+pnpm remove @line-copy/vite-plugin
+pnpm add @line-copy/vite-plugin --save-dev
+``` 
 
 # 本地安装
 
