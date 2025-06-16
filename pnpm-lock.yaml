@@ -10,10 +10,6 @@ overrides:
 importers:
 
   .:
-    dependencies:
-      '@line-copy/vite-plugin':
-        specifier: link:C:/Users/wanganqing/AppData/Local/pnpm/global/5/node_modules/@line-copy/vite-plugin
-        version: link:C:/Users/wanganqing/AppData/Local/pnpm/global/5/node_modules/@line-copy/vite-plugin
     devDependencies:
       '@changesets/cli':
         specifier: ^2.29.4
