@@ -40,3 +40,8 @@ pnpm install
 "@line-copy/common": "workspace:*",
 "@line-copy/vite-plugin": "workspace:*",
 ```
+
+``` json
+"@line-copy/common": "workspace:*",
+"@line-copy/webpack-loader": "workspace:*",
+```
