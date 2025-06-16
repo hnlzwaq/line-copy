@@ -10,7 +10,7 @@
     "webpack": ">=5.0.0"
   },
   "license": "MIT",
-  "gitHead": "95fab6c1751c3af5ae8223c0413aebaf1553c0a7",
+  "gitHead": "f6f0f6ad12a224616e447511c1a7b1f4d4bdb727",
   "publishConfig": {
     "access": "public"
   }

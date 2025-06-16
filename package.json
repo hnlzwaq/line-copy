@@ -1,5 +1,5 @@
 {
-  "name": "line-copy-monorepo",
+  "name": "line-copy",
   "private": true,
   "version": "1.0.0",
   "workspaces": [
