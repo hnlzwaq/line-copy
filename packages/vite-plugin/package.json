@@ -20,7 +20,7 @@
     "index.js"
   ],
   "exports": {
-    "index": "./index.js",
-    "directive": "./directive.js"
+    ".": "./index.js",
+    "./directive": "./directive.js"
   }
 }

@@ -38,22 +38,12 @@ pnpm setup
 
 在每个子插件项目中执行以下命令：
  
-``` shell 
-Set-Location packages/common
+```
+rm -rf node_modules
+
 pnpm link --global
-
-
-Set-Location packages/vite-plugin
-pnpm link --global
-
-
-Set-Location packages/webpack-loader
-pnpm link --global
-
- 
- 
- 
 pnpm list --global --depth 1
+
 ```
 
 在目标项目中执行以下命令：
