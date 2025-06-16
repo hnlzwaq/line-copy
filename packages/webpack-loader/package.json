@@ -1,0 +1,13 @@
+{
+  "name": "@line-copy/webpack-loader",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "commonjs",
+  "dependencies": {
+    "@line-copy/common": "^1.0.0"
+  },
+  "peerDependencies": {
+    "webpack": ">=5.0.0"
+  },
+  "license": "MIT"
+}
