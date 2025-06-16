@@ -28,7 +28,34 @@ npx changeset version
 pnpm publish -r --access public
 ```
 
+# 本地配置
+
+初始化pnpm setup
+
+``` js
+pnpm setup
+```
+
+在每个子插件项目中执行以下命令：
+
+``` js
+pnpm link --global
+```
+
+在目标项目中执行以下命令：
+
+``` js 安装
+pnpm link --global @line-copy/vite-common
+pnpm link --global @line-copy/vite-plugin
+pnpm link --global @line-copy/webpack-loader
+
+pnpm link --save-dev @line-copy/vite-plugin
+```
+
+
 # 本地安装
+
+在根目录执行以下命令：
 
 ``` js
 pnpm install
@@ -36,12 +63,6 @@ pnpm install
 
 # 本地使用
 
-``` json
-"@line-copy/common": "workspace:*",
-"@line-copy/vite-plugin": "workspace:*",
-```
-
-``` json
-"@line-copy/common": "workspace:*",
-"@line-copy/webpack-loader": "workspace:*",
+``` js 使用
+pnpm install
 ```
