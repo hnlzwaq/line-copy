@@ -1,10 +1,10 @@
 {
   "name": "@line-copy/vite-plugin",
-  "version": "1.0.14",
+  "version": "2.0.0",
   "main": "index.js",
   "type": "module",
   "dependencies": {
-    "@line-copy/common": "^1.0.14"
+    "@line-copy/common": "^2.0.0"
   },
   "peerDependencies": {
     "vite": ">=3.0.0",
