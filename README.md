@@ -15,14 +15,23 @@ pnpm add -D @changesets/cli
 npx changeset init
 ```
 
-# 生成修改
+# 发布线上
 
-``` js
+修改版本号 patch / minor / major
+
+``` js 
 npx changeset
 npx changeset version
 ```
 
-# 发布线上
+提交代码
+
+```shell
+git add .
+git commit -m "chore: release packages"
+```
+
+发布
 
 ``` js
 pnpm publish -r --access public
@@ -37,13 +46,11 @@ pnpm setup
 ```
 
 在每个子插件项目中执行以下命令：
- 
+
 ```
 rm -rf node_modules
-
 pnpm link --global
 pnpm list --global --depth 1
-
 ```
 
 在目标项目中执行以下命令：
@@ -58,20 +65,11 @@ pnpm list @line-copy/webpack-loader
  
 ```
 
-
 恢复远程包
 
 ``` js 
 pnpm remove @line-copy/vite-plugin
 npm install @line-copy/vite-plugin --save-dev
-pnpm list @line-copy/vite-plugin
-``` 
-
-恢复远程包
-
-``` js 
-pnpm remove @line-copy/vite-plugin
-pnpm add @line-copy/vite-plugin --save-dev
 pnpm list @line-copy/vite-plugin
 ``` 
 
