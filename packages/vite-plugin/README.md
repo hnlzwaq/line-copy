@@ -31,15 +31,10 @@ export default {
 };
 ```
 
-### In main.js  在 main.js 中注册插件
+### In main.js  在 main.js 中引用一下js
 ```js
-import { createApp } from 'vue';
-import App from './App.vue';
-import LineCopy from '@line-copy/vite-plugin/directive';
+from '@line-copy/common/howDebugInfo.js';
 
-const app = createApp(App);
-app.directive('LineCopy', LineCopy)
-app.mount('#app');
 ```
 
 ## 📋 How it works 工作原理
