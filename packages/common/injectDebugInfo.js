@@ -1,4 +1,4 @@
-export function injectDebugInfoToVueCode(code, filename, tags = ['el-button'], options = {addLineNumber: 0}) {
+export function injectDebugInfoToVueCode(code, filename, targetTags = ['el-button'], options = {addLineNumber: 0}) {
     const addLineNumber = options.addLineNumber || 0;
     // 将代码按行切分，方便逐行处理
     const lines = code.split('\n');

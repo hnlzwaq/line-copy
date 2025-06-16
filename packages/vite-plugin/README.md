@@ -17,6 +17,7 @@ A Vite plugin and Vue directive that allows you to copy the source file and line
 
 ```bash
 npm install @line-copy/vite-plugin --save-dev
+npm update --force @line-copy/vite-plugin
 ```
 
 ## 🔧 Usage 使用

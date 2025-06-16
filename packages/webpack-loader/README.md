@@ -17,6 +17,7 @@ A Vite plugin and Vue directive that allows you to copy the source file and line
 
 ```bash
 npm install @line-copy/webpack-loader --save-dev
+npm update --force @line-copy/webpack-loader
 ```
 
 ## 🔧 Usage 使用
