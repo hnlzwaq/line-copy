@@ -9,5 +9,10 @@
   "peerDependencies": {
     "webpack": ">=5.0.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "gitHead": "df98f9261a59ef234de6d3e8c4fc5691bef8da35",
+  "publishConfig": {
+    "access": "public"
+  }
+
 }
