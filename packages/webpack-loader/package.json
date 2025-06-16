@@ -15,11 +15,9 @@
     "access": "public"
   },
   "files": [
-    "directive.js",
     "index.js"
   ],
   "exports": {
-    ".": "./index.js",
-    "./directive": "./directive.js"
+    ".": "./index.js"
   }
 }

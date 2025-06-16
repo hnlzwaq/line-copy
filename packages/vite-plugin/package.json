@@ -7,8 +7,7 @@
     "@line-copy/common": "^2.0.0"
   },
   "peerDependencies": {
-    "vite": ">=3.0.0",
-    "vue": ">=3.0.0"
+    "vite": ">=2.9.0 <6"
   },
   "license": "MIT",
   "gitHead": "5dcebdb76ac66896c6d6ad8e0bc856b2399bd8b8",
@@ -16,11 +15,9 @@
     "access": "public"
   },
   "files": [
-    "directive.js",
     "index.js"
   ],
   "exports": {
-    ".": "./index.js",
-    "./directive": "./directive.js"
+    ".": "./index.js"
   }
 }

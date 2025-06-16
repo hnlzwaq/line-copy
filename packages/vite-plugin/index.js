@@ -1,4 +1,4 @@
-import { injectDebugInfoToVueCode } from '../common/injectDebugInfo.js';
+import { injectDebugInfo } from '../common/injectDebugInfo.js';
 import { normalizePath, extractFilename } from '../common/utils.js';
 
 export function vitePluginLineCopy(targetTags = ['el-button'], options = {}) {
@@ -9,7 +9,7 @@ export function vitePluginLineCopy(targetTags = ['el-button'], options = {}) {
             if (!id.endsWith('.vue')) return;
             const normalizedPath = normalizePath(id);
             const filename = extractFilename(normalizedPath);
-            const newCode = injectDebugInfoToVueCode(code, filename, targetTags, options);
+            const newCode = injectDebugInfo(code, filename, targetTags, options);
             return { code: newCode, map: null };
         },
     };
