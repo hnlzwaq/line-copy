@@ -11,7 +11,7 @@
     "vue": ">=3.0.0"
   },
   "license": "MIT",
-  "gitHead": "ae962e3262c3e7af24c6dd73286dd0e077ad3dfe",
+  "gitHead": "95fab6c1751c3af5ae8223c0413aebaf1553c0a7",
   "publishConfig": {
     "access": "public"
   }
