@@ -50,10 +50,10 @@ src/components/MyButton.vue:12
 ```
 ## 📋 Picture 图片说明
 ### First 第一步
-![img-1.png](vite-plugin/img/img-1.png)
+![img-1.png](img/img-1.png)
 ### Second 第二步
-![img-2.png](vite-plugin/img/img-2.png)
+![img-2.png](img/img-2.png)
 ### tips 提示
-![img-3.png](vite-plugin/img/img-3.png)
+![img-3.png](img/img-3.png)
 ## 🪪 License
 MIT
