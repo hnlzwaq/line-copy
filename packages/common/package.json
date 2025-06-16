@@ -1,6 +1,6 @@
 {
   "name": "@line-copy/common",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "main": "injectDebugInfo.js",
   "type": "module",
   "license": "MIT",
@@ -8,5 +8,4 @@
   "publishConfig": {
     "access": "public"
   }
-
 }
