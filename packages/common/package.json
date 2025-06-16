@@ -4,7 +4,7 @@
   "main": "injectDebugInfo.js",
   "type": "module",
   "license": "MIT",
-  "gitHead": "df98f9261a59ef234de6d3e8c4fc5691bef8da35",
+  "gitHead": "ae962e3262c3e7af24c6dd73286dd0e077ad3dfe",
   "publishConfig": {
     "access": "public"
   }
