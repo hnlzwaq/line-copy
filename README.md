@@ -8,3 +8,4 @@ npx lerna run remove-unnecessary-use-nx
 lerna repair
 npx lerna init
 npx lerna publish
+npx lerna publish --no-push
