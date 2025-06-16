@@ -8,7 +8,7 @@
     "packages/webpack-loader"
   ],
   "devDependencies": {
-    "lerna": "^6.6.2"
+    "@changesets/cli": "^2.29.4"
   },
   "license": "MIT",
   "publishConfig": {

@@ -17,5 +17,9 @@
   "files": [
     "directive.js",
     "index.js"
-  ]
+  ],
+  "exports": {
+    "index": "./index.js",
+    "directive": "./directive.js"
+  }
 }

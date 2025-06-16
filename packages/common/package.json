@@ -5,7 +5,13 @@
   "type": "module",
   "license": "MIT",
   "gitHead": "5dcebdb76ac66896c6d6ad8e0bc856b2399bd8b8",
+  "exports": {
+    "injectDebugInfo": "./injectDebugInfo.js",
+    "showDebugInfo": "./showDebugInfo.js",
+    "utils": "./utils.js"
+  },
   "publishConfig": {
     "access": "public"
   }
+
 }
