@@ -35,10 +35,10 @@ export default {
 ```js
 import { createApp } from 'vue';
 import App from './App.vue';
-import LineCopy from '@line-copy/vite-plugin';
+import LineCopy from '@line-copy/vite-plugin/directive';
 
 const app = createApp(App);
-app.use(LineCopy);
+app.directive('LineCopy', LineCopy)
 app.mount('#app');
 ```
 

@@ -53,10 +53,10 @@ module.exports = {
 ```js
 import { createApp } from 'vue';
 import App from './App.vue';
-import LineCopy from '@line-copy/webpack-loader';
+import LineCopy from '@line-copy/webpack-loader/directive';
 
 const app = createApp(App);
-app.use(LineCopy);
+app.directive('LineCopy', LineCopy)
 app.mount('#app');
 
 ```
