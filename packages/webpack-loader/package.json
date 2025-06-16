@@ -13,5 +13,8 @@
   "gitHead": "5dcebdb76ac66896c6d6ad8e0bc856b2399bd8b8",
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "files": [
+    "img/"
+  ]
 }
